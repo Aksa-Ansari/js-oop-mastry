@@ -23,3 +23,19 @@ class Dog extends Animal {
 let d1 = new Dog("Bruno");
 d1.sound();
 d1.bark();
+
+
+class AgeChecker {
+
+    static isEligible(age) {
+        if (age >= 18) {
+            return "Eligible for voting";
+        } else {
+            return "Not eligible for voting";
+        }
+    }
+}
+
+// direct class call
+console.log(AgeChecker.isEligible(20)); // Eligible for voting
+console.log(AgeChecker.isEligible(15)); // Not eligible for voting
